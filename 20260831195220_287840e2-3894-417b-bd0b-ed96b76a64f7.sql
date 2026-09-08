@@ -1,0 +1,2 @@
+ALTER TABLE public.app_settings
+  ADD COLUMN IF NOT EXISTS store_whatsapp text NOT NULL DEFAULT '5492615585633';

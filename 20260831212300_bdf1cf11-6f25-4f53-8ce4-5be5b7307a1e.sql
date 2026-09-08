@@ -1,0 +1,1 @@
+ALTER TABLE public.delivery_slots ADD COLUMN IF NOT EXISTS zone_ids uuid[] NOT NULL DEFAULT '{}'::uuid[];

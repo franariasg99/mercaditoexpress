@@ -1,0 +1,10 @@
+REVOKE EXECUTE ON FUNCTION public.has_role(uuid, app_role) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.consume_stock(jsonb) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.handle_new_user() FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.set_updated_at() FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.is_super_admin(uuid) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.is_tenant_admin(uuid, uuid) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.my_tenant_id(uuid) FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.create_tenant_defaults() FROM anon, authenticated;
+REVOKE EXECUTE ON FUNCTION public.tenant_is_public(uuid) FROM anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.consume_stock(jsonb) TO service_role;

@@ -1,0 +1,1 @@
+ALTER TABLE public.orders ADD COLUMN IF NOT EXISTS location_confirmed boolean NOT NULL DEFAULT false;

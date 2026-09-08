@@ -1,0 +1,1 @@
+ALTER TABLE public.platform_settings ADD COLUMN IF NOT EXISTS payment_alias text NOT NULL DEFAULT 'Fran.ariasg99';
